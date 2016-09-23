@@ -61,6 +61,7 @@ group :development do
   gem 'capistrano-figaro-yml',    '~> 1.0.2', require: false
   gem 'capistrano-rails-console',             require: false
   gem 'capistrano-rails-tail-log',            require: false
+  gem 'slackistrano', '3.1.0.beta'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

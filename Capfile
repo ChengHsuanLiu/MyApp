@@ -16,6 +16,8 @@ require 'capistrano/rails_tail_log'
 
 require 'whenever/capistrano'
 
+require 'slackistrano/capistrano'
+
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:

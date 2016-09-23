@@ -37,6 +37,11 @@ set :linked_dirs,  fetch(:linked_dirs,  []).push('log', 'tmp/pids', 'tmp/cache',
 
 set :keep_releases, 5
 
+set :slackistrano, {
+ channel: '#dev',
+ webhook: 'https://hooks.slack.com/services/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'
+}
+
 namespace :bundler do
   before :install, :prepare_bundle do
     on roles(:web) do
