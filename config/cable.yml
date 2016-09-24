@@ -19,4 +19,5 @@ test:
   <<: *default
 
 production:
-  <<: *default
+  adapter: redis
+  url: ENV['REDIS_URL']
