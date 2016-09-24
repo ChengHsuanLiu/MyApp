@@ -1,0 +1,27 @@
+<style type="text/css">
+	.message[user-id="<%= current_user.id %>"]{
+		text-align: right;
+	}
+
+	.message[user-id="<%= current_user.id %>"] .message-feed{
+		background-color: #4C74C4;
+		color: #FFF;
+	}
+</style>
+<section id="chat-room" class="chat-room">
+	<div id="messages" class="messages">
+		<%= render @messages %>
+	</div>
+	<div class="input-form-container">
+		<form>
+			<input type="text" placeholder="輸入訊息.." id="message-input" data-behavior="room_speaker" user-id="<%= current_user.id %>" />
+			<a id="submit-btn" class="submit-btn">送出</a>
+		</form>
+	</div>
+</section>
+
+<script type="text/javascript">
+	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 1);
+</script>
+
+

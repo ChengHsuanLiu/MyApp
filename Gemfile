@@ -31,6 +31,9 @@ gem 'sinatra', github: 'sinatra', require: false
 gem 'figaro'
 gem 'sidekiq'
 gem 'whenever', require: false
+gem 'devise'
+
+gem 'pry-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
