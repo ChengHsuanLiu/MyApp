@@ -20,4 +20,4 @@ test:
 
 production:
   adapter: redis
-  url: ENV['ACTION_CABLE_REDIS_URL']
+  url: 'redis://myappredis.wpef5k.0001.usw2.cache.amazonaws.com:6379/0'
