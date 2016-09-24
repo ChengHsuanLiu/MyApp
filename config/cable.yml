@@ -20,4 +20,4 @@ test:
 
 production:
   adapter: redis
-  url: ENV['REDIS_URL']
+  url: ENV['ACTION_CABLE_REDIS_URL']
